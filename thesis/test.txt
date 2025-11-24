@@ -1,0 +1,243 @@
+\documentclass[a4paper,12pt]{article}
+
+\setlength{\textwidth}{167mm}      
+\setlength{\textheight}{658pt}
+
+\renewcommand{\refname}{\protect\rmfamily ‹ЁвҐа вга }
+
+\newcounter{razdel}
+\setcounter{razdel}{0}
+
+\newcommand{\titel}[4]{
+\ifodd\therazdel {\raggedright\noindent\Large\textrm\textbf
+ \lineskip .75em
+  \baselineskip=3.2ex #1 \par}
+\vskip 1em {\noindent\large\textrm\textbf #2 \par}
+\addcontentsline{toc}{subsection}{{\textrm\textbf #1}\protect\newline #2}
+\def\rightheadline{\underline{\noindent\hbox to \textwidth{\hfill\small\textrm{#4}
+}}}
+\def\leftheadline{\underline{\noindent\parbox{\textwidth}{
+\small\textit{#3}\hfill}}}
+\def\leftfootline{\small{\textbf{\thepage}
+\hfill €Ќ”ЋђЊЂ’€ЉЂ € …р Џђ€Њ…Ќ…Ќ€џ\ \ \ в®¬~\tom\ \ \ ўлЇгбЄ~\vyp\ \ \ \god}
+}%
+ \def\rightfootline{\small{€Ќ”ЋђЊЂ’€ЉЂ € …р Џђ€Њ…Ќ…Ќ€џ\ \ \ в®¬~\tom\ \ \ ўлЇгбЄ~\vyp\ \ \ \god
+\hfill \textbf{\thepage}}}
+\vskip 2em \setcounter{figure}{0}
+\setcounter{table}{0}
+\setcounter{equation}{0}
+\setcounter{section}{0}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{footnote}{0}
+\setcounter{razdel}{0}
+\else {
+ \raggedright\noindent\Large\textrm\textbf
+ \lineskip .75em
+\baselineskip=3.2ex #1 \par} \vskip 1em
+{\noindent\large\textrm\textbf #2 \par}
+\addcontentsline{toc}{subsection}{{\textrm\textbf #1}\protect\newline #2}
+\def\rightheadline{\underline{\noindent\hbox to \textwidth{\hfill\small\textrm{#4}
+}}}
+\def\leftheadline{\underline{\noindent\parbox{\textwidth}{
+\small\textit{#3}\hfill}}}
+\def\leftfootline{\small{\textbf{\thepage}
+\hfill €Ќ”ЋђЊЂ’€ЉЂ € …р Џђ€Њ…Ќ…Ќ€џ\ \ \ в®¬~\tom\ \ \ ўлЇгбЄ~\vyp\ \ \ \god}
+}%
+ \def\rightfootline{\small{€Ќ”ЋђЊЂ’€ЉЂ € …р Џђ€Њ…Ќ…Ќ€џ\ \ \ в®¬~17\ \ \ ўлЇгбЄ~\vyp\ \ \ 2023
+\hfill \textbf{\thepage}}} \vskip 2em \setcounter{figure}{0}
+\setcounter{table}{0} \setcounter{equation}{0} \setcounter{section}{0}
+\setcounter{subsection}{0} \setcounter{subsubsection}{0}
+\setcounter{footnote}{0}
+\fi}
+
+\newcommand{\titelr}[2]{
+\ifodd\therazdel {\raggedright\noindent
+ \lineskip .75em
+  \baselineskip=3.2ex #1 \par}
+\vskip 1em {\noindent\normalsize\textrm\textbf #2 \par}
+\else {
+ \raggedright\noindent\Large\textrm\textbf
+ \lineskip .75em
+\baselineskip=3.2ex #1 \par} \vskip 1em
+{\noindent\large\textrm\textbf #2 \par
+} \fi}
+
+\newcommand{\titele}[5]{%
+\ifodd\therazdel {\raggedright\noindent\large
+\textrm\textbf
+ \lineskip .75em
+#1 \par}
+\vskip .5em {\noindent\large\textrm\textbf #2 \par}
+\vskip .5em
+ {\noindent\textrm #3 \par}
+\addcontentsline{toc}{subsection}{{\textrm\textbf #1}\protect\newline #2}
+\def\rightheadline{\underline{\noindent\hbox to \textwidth{\hfill\small\textrm{#4}
+}}}
+\def\leftheadline{\underline{\noindent\parbox{\textwidth}{
+\small\textrm{#5}\hfill}}}
+\def\leftfootline{\small{\textbf{\thepage}
+\hfill €Ќ”ЋђЊЂ’€ЉЂ € …р Џђ€Њ…Ќ…Ќ€џ\ \ \ в®¬~17\ \ \ ўлЇгбЄ~4\ \ \ 2023}
+}%
+ \def\rightfootline{\small{€Ќ”ЋђЊЂ’€ЉЂ € …р Џђ€Њ…Ќ…Ќ€џ\ \ \ в®¬~17\ \ \ ўлЇгбЄ~4\ \ \ 2023
+\hfill \textbf{\thepage}}} \vskip 1em \setcounter{figure}{0}
+\setcounter{table}{0} \setcounter{equation}{0} \setcounter{section}{0}
+\setcounter{subsection}{0} \setcounter{subsubsection}{0}
+\setcounter{footnote}{0} \setcounter{razdel}{0}
+\else {
+ \raggedright\noindent\large
+ \textrm\textbf
+ \lineskip .75em
+#1 \par} \vskip .5em
+{\noindent\large\textrm\textbf #2 \par} \vskip .5em
+ {\noindent\textrm #3 \par}
+\addcontentsline{toc}{subsection}{{\textrm\textbf #1}\protect\newline #2}
+\def\rightheadline{\underline{\noindent\hbox to \textwidth{\hfill\small\textrm{#4}
+}}}
+\def\leftheadline{\underline{\noindent\parbox{\textwidth}{
+\small\textrm{#5}\hfill}}}
+\def\leftfootline{\small{\textbf{\thepage}
+\hfill €Ќ”ЋђЊЂ’€ЉЂ € …р Џђ€Њ…Ќ…Ќ€џ\ \ \ в®¬~17\ \ \ ўлЇгбЄ~4\ \ \ 2023}
+}%
+ \def\rightfootline{\small{€Ќ”ЋђЊЂ’€ЉЂ € …р Џђ€Њ…Ќ…Ќ€џ\ \ \ в®¬~17\ \ \ ўлЇгбЄ~4\ \ \ 2023
+\hfill \textbf{\thepage}}} \vskip 1em \setcounter{figure}{0}
+\setcounter{table}{0} \setcounter{equation}{0} \setcounter{section}{0}
+\setcounter{subsection}{0} \setcounter{subsubsection}{0}
+\setcounter{footnote}{0}
+\fi}
+
+\def\Abst#1{
+\begin{center}\small
+\parbox{150mm}{\textbf{Ђ­­®в жЁп:}\ \
+#1}
+\end{center}}
+\def\Abste#1{
+\begin{center}\small
+\parbox{150mm}{\textbf{Abstract:}\ \
+#1}
+\end{center}}
+
+\def\Abstend#1{
+\begin{center}\small
+\parbox{150mm}{#1}
+\end{center}}
+
+
+
+\def\KW#1{
+\begin{center}\small
+\parbox{150mm}{
+\textbf{Љ«озҐўлҐ б«®ў :}\ \ #1}
+\end{center}}
+
+\def\KWE#1{
+\begin{center}\small
+\parbox{150mm}{
+\textbf{Keywords:}\ \ #1}
+\end{center}}
+
+
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}\hspace*{-5pt}}
+\renewcommand{\thesubsubsection}{\thesubsection\hspace*{5pt}.\arabic{subsubsection}\hspace*{-3pt}}
+
+\newcommand{\Ack}{\section*{\protect\rmfamily Acknowledgments}\noindent}
+\newcommand{\Contr}{\section*{\protect\rmfamily Contributors}\noindent}
+\newcommand{\Contrl}{\section*{\protect\rmfamily Contributor}\noindent}
+
+\makeindex
+
+\begin{document}
+
+\def\stat{author} % д ¬Ё«Ёп ЇҐаў®Ј®  ўв®а  ­   ­Ј«Ё©бЄ®¬
+
+\def\tit{ЌЂ‡‚ЂЌ€… ‘’Ђ’њ€$^*$}
+
+\def\titkol{Ќ §ў ­ЁҐ бв вмЁ}
+
+\def\aut{€.\,Ћ.~” ¬Ё«Ёп1$^1$, €.\,Ћ.~” ¬Ё«Ёп2$^2$...}
+
+\def\autkol{€.\,Ћ.~” ¬Ё«Ёп1, €.\,Ћ.~” ¬Ё«Ёп2...}
+
+\titel{\tit}{\aut}{\autkol}{\titkol}
+
+\index{” ¬Ё«Ёп1 €.\,Ћ.}
+\index{Family name1 FN.\,SN.} % ”€Ћ ­   ­Ј«Ё©бЄ®¬ ЇҐаў®Ј®  ўв®а 
+\index{” ¬Ё«Ёп2 €.\,Ћ.}
+\index{Family name2 FN.\,SN.} % ”€Ћ ­   ­Ј«Ё©бЄ®¬ ўв®а®Ј®  ўв®а  Ё в. ¤.
+
+{\renewcommand{\thefootnote}{\fnsymbol{footnote}} \footnotetext[1]
+{Ѓ« Ј®¤ а­®бвЁ ­  агббЄ®¬ п§лЄҐ}}
+
+
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\footnotetext[1]{ЊҐбв® а Ў®вл ЇҐаў®Ј®  ўв®а , \mbox{н«ҐЄва®­­л©  ¤аҐб ЇҐаў®Ј®  ўв®а }}
+\footnotetext[2]{ЊҐбв® а Ў®вл ўв®а®Ј®  ўв®а , \mbox{н«ҐЄва®­­л©  ¤аҐб ўв®а®Ј®  ўв®а }}
+ 
+\Abst{Ђ­­®в жЁп ­  агббЄ®¬ (­Ґ ¬Ґ­ҐҐ 100 б«®ў)}
+
+\KW{Љ«озҐўлҐ б«®ў  ­  агббЄ®¬}
+
+
+\section{‚ўҐ¤Ґ­ЁҐ}
+
+
+\section{Ћб­®ў­ п з бвм}
+
+\section{‡ Є«озҐ­ЁҐ}
+ 
+{\small\frenchspacing
+  \begin{thebibliography}{99}
+ \bibitem{Aut-1} 
+{\it Ѓ®з а®ў  Џ.\ Џ., ЏҐзЁ­ЄЁ­ Ђ.\ ‚.} ’Ґ®аЁп ¬ бб®ў®Ј® ®Ўб«г¦Ёў ­Ёп. --- Њ.: ђ“„Ќ, 1995. 529 б.
+\end{thebibliography}
+}
+
+\newpage
+
+\def\tit{PAPER TITLE}
+
+
+\def\titkol{Paper title}
+
+
+\def\aut{FN.\,SN.~Author1, FN.\,SN.~Author2,..}
+
+\def\autkol{FN.\,SN.~Author1, FN.\,SN.~Author2,..}
+
+\titel{\tit}{\aut}{\autkol}{\titkol}
+
+\noindent
+Affiliations
+
+
+\def\leftfootline{\small{\textbf{\thepage}
+\hfill INFORMATIKA I EE PRIMENENIYA~--- INFORMATICS AND
+APPLICATIONS\ \ \ 2023\ \ \ volume~17\ \ \ issue\ 4}
+}%
+ \def\rightfootline{\small{INFORMATIKA I EE PRIMENENIYA~---
+INFORMATICS AND APPLICATIONS\ \ \ 2023\ \ \ volume~17\ \ \ issue\ 4
+\hfill \textbf{\thepage}}}
+
+
+\Abst{ABstract in English (­Ґ ¬Ґ­ҐҐ 100 б«®ў)}
+
+
+\KWE{Є«озҐўлҐ б«®ў  ­   ­Ј«Ё©бЄ®¬}
+
+
+\Ack
+Ѓ« Ј®¤ а­®бвЁ ­   ­Ј«Ё©бЄ®¬
+
+\renewcommand{\refname}{\protect\rmfamily References}
+
+{\small\frenchspacing
+  \begin{thebibliography}{99} 
+\bibitem{Aut-1e}
+Bocharov,  P.\ P., A.\ V.\ Pechinkin. 1995.
+\textit{Teoriya massovogo obsluzhivaniya} [Queueing theory].
+Moscow: RUDN. 529 p.
+
+\end{thebibliography}
+}
+
+\end{document}
