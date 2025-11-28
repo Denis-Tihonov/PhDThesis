@@ -1,9 +1,13 @@
 \documentclass[a4paper,12pt]{article}
 
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+
 \setlength{\textwidth}{167mm}      
 \setlength{\textheight}{658pt}
 
-\renewcommand{\refname}{\protect\rmfamily ‹ЁвҐа вга }
+\renewcommand{\refname}{\protect\rmfamily Литература}
 
 \newcounter{razdel}
 \setcounter{razdel}{0}
@@ -19,9 +23,9 @@
 \def\leftheadline{\underline{\noindent\parbox{\textwidth}{
 \small\textit{#3}\hfill}}}
 \def\leftfootline{\small{\textbf{\thepage}
-\hfill €Ќ”ЋђЊЂ’€ЉЂ € …р Џђ€Њ…Ќ…Ќ€џ\ \ \ в®¬~\tom\ \ \ ўлЇгбЄ~\vyp\ \ \ \god}
+\hfill ИНФОРМАТИКА И ЕЕ ПРИМЕНЕНИЯ\ \ \ том~\tom\ \ \ выпуск~\vyp\ \ \ \god}
 }%
- \def\rightfootline{\small{€Ќ”ЋђЊЂ’€ЉЂ € …р Џђ€Њ…Ќ…Ќ€џ\ \ \ в®¬~\tom\ \ \ ўлЇгбЄ~\vyp\ \ \ \god
+ \def\rightfootline{\small{ИНФОРМАТИКА И ЕЕ ПРИМЕНЕНИЯ\ \ \ том~\tom\ \ \ выпуск~\vyp\ \ \ \god
 \hfill \textbf{\thepage}}}
 \vskip 2em \setcounter{figure}{0}
 \setcounter{table}{0}
@@ -42,9 +46,9 @@
 \def\leftheadline{\underline{\noindent\parbox{\textwidth}{
 \small\textit{#3}\hfill}}}
 \def\leftfootline{\small{\textbf{\thepage}
-\hfill €Ќ”ЋђЊЂ’€ЉЂ € …р Џђ€Њ…Ќ…Ќ€џ\ \ \ в®¬~\tom\ \ \ ўлЇгбЄ~\vyp\ \ \ \god}
+\hfill ИНФОРМАТИКА И ЕЕ ПРИМЕНЕНИЯ\ \ \ том~\tom\ \ \ выпуск~\vyp\ \ \ \god}
 }%
- \def\rightfootline{\small{€Ќ”ЋђЊЂ’€ЉЂ € …р Џђ€Њ…Ќ…Ќ€џ\ \ \ в®¬~17\ \ \ ўлЇгбЄ~\vyp\ \ \ 2023
+ \def\rightfootline{\small{ИНФОРМАТИКА И ЕЕ ПРИМЕНЕНИЯ\ \ \ том~17\ \ \ выпуск~\vyp\ \ \ 2023
 \hfill \textbf{\thepage}}} \vskip 2em \setcounter{figure}{0}
 \setcounter{table}{0} \setcounter{equation}{0} \setcounter{section}{0}
 \setcounter{subsection}{0} \setcounter{subsubsection}{0}
@@ -77,9 +81,9 @@
 \def\leftheadline{\underline{\noindent\parbox{\textwidth}{
 \small\textrm{#5}\hfill}}}
 \def\leftfootline{\small{\textbf{\thepage}
-\hfill €Ќ”ЋђЊЂ’€ЉЂ € …р Џђ€Њ…Ќ…Ќ€џ\ \ \ в®¬~17\ \ \ ўлЇгбЄ~4\ \ \ 2023}
+\hfill ИНФОРМАТИКА И ЕЕ ПРИМЕНЕНИЯ\ \ \ том~17\ \ \ выпуск~4\ \ \ 2023}
 }%
- \def\rightfootline{\small{€Ќ”ЋђЊЂ’€ЉЂ € …р Џђ€Њ…Ќ…Ќ€џ\ \ \ в®¬~17\ \ \ ўлЇгбЄ~4\ \ \ 2023
+ \def\rightfootline{\small{ИНФОРМАТИКА И ЕЕ ПРИМЕНЕНИЯ\ \ \ том~17\ \ \ выпуск~4\ \ \ 2023
 \hfill \textbf{\thepage}}} \vskip 1em \setcounter{figure}{0}
 \setcounter{table}{0} \setcounter{equation}{0} \setcounter{section}{0}
 \setcounter{subsection}{0} \setcounter{subsubsection}{0}
@@ -97,9 +101,9 @@
 \def\leftheadline{\underline{\noindent\parbox{\textwidth}{
 \small\textrm{#5}\hfill}}}
 \def\leftfootline{\small{\textbf{\thepage}
-\hfill €Ќ”ЋђЊЂ’€ЉЂ € …р Џђ€Њ…Ќ…Ќ€џ\ \ \ в®¬~17\ \ \ ўлЇгбЄ~4\ \ \ 2023}
+\hfill ИНФОРМАТИКА И ЕЕ ПРИМЕНЕНИЯ\ \ \ том~17\ \ \ выпуск~4\ \ \ 2023}
 }%
- \def\rightfootline{\small{€Ќ”ЋђЊЂ’€ЉЂ € …р Џђ€Њ…Ќ…Ќ€џ\ \ \ в®¬~17\ \ \ ўлЇгбЄ~4\ \ \ 2023
+ \def\rightfootline{\small{ИНФОРМАТИКА И ЕЕ ПРИМЕНЕНИЯ\ \ \ том~17\ \ \ выпуск~4\ \ \ 2023
 \hfill \textbf{\thepage}}} \vskip 1em \setcounter{figure}{0}
 \setcounter{table}{0} \setcounter{equation}{0} \setcounter{section}{0}
 \setcounter{subsection}{0} \setcounter{subsubsection}{0}
@@ -108,7 +112,7 @@
 
 \def\Abst#1{
 \begin{center}\small
-\parbox{150mm}{\textbf{Ђ­­®в жЁп:}\ \
+\parbox{150mm}{\textbf{Аннотация:}\ \
 #1}
 \end{center}}
 \def\Abste#1{
@@ -127,7 +131,7 @@
 \def\KW#1{
 \begin{center}\small
 \parbox{150mm}{
-\textbf{Љ«озҐўлҐ б«®ў :}\ \ #1}
+\textbf{Ключевые слова:}\ \ #1}
 \end{center}}
 
 \def\KWE#1{
@@ -148,47 +152,47 @@
 
 \begin{document}
 
-\def\stat{author} % д ¬Ё«Ёп ЇҐаў®Ј®  ўв®а  ­   ­Ј«Ё©бЄ®¬
+\def\stat{author} % фамилия первого автора на английском
 
-\def\tit{ЌЂ‡‚ЂЌ€… ‘’Ђ’њ€$^*$}
+\def\tit{НАЗВАНИЕ СТАТЬИ$^*$}
 
-\def\titkol{Ќ §ў ­ЁҐ бв вмЁ}
+\def\titkol{Название статьи}
 
-\def\aut{€.\,Ћ.~” ¬Ё«Ёп1$^1$, €.\,Ћ.~” ¬Ё«Ёп2$^2$...}
+\def\aut{И.О. Фамилия1$^1$, И.О. Фамилия2$^2$...}
 
-\def\autkol{€.\,Ћ.~” ¬Ё«Ёп1, €.\,Ћ.~” ¬Ё«Ёп2...}
+\def\autkol{И.О. Фамилия1, И.О. Фамилия2...}
 
 \titel{\tit}{\aut}{\autkol}{\titkol}
 
-\index{” ¬Ё«Ёп1 €.\,Ћ.}
-\index{Family name1 FN.\,SN.} % ”€Ћ ­   ­Ј«Ё©бЄ®¬ ЇҐаў®Ј®  ўв®а 
-\index{” ¬Ё«Ёп2 €.\,Ћ.}
-\index{Family name2 FN.\,SN.} % ”€Ћ ­   ­Ј«Ё©бЄ®¬ ўв®а®Ј®  ўв®а  Ё в. ¤.
+\index{Фамилия1 И.О.}
+\index{Family name1 FN.\,SN.} % ФИО на английском первого автора
+\index{Фамилия2 И.О.}
+\index{Family name2 FN.\,SN.} % ФИО на английском второго автора и т. д.
 
 {\renewcommand{\thefootnote}{\fnsymbol{footnote}} \footnotetext[1]
-{Ѓ« Ј®¤ а­®бвЁ ­  агббЄ®¬ п§лЄҐ}}
+{Благодарности на русском языке}}
 
 
 \renewcommand{\thefootnote}{\arabic{footnote}}
-\footnotetext[1]{ЊҐбв® а Ў®вл ЇҐаў®Ј®  ўв®а , \mbox{н«ҐЄва®­­л©  ¤аҐб ЇҐаў®Ј®  ўв®а }}
-\footnotetext[2]{ЊҐбв® а Ў®вл ўв®а®Ј®  ўв®а , \mbox{н«ҐЄва®­­л©  ¤аҐб ўв®а®Ј®  ўв®а }}
+\footnotetext[1]{место работы первого автора, \mbox{электронный адрес первого автора}}
+\footnotetext[2]{место работы второго автора, \mbox{электронный адрес второго автора}}
  
-\Abst{Ђ­­®в жЁп ­  агббЄ®¬ (­Ґ ¬Ґ­ҐҐ 100 б«®ў)}
+\Abst{Аннотация на русском (не менее 100 слов)}
 
-\KW{Љ«озҐўлҐ б«®ў  ­  агббЄ®¬}
-
-
-\section{‚ўҐ¤Ґ­ЁҐ}
+\KW{Ключевые слова на русском}
 
 
-\section{Ћб­®ў­ п з бвм}
+\section{Введение}
 
-\section{‡ Є«озҐ­ЁҐ}
+
+\section{Основная часть}
+
+\section{Заключение}
  
 {\small\frenchspacing
   \begin{thebibliography}{99}
  \bibitem{Aut-1} 
-{\it Ѓ®з а®ў  Џ.\ Џ., ЏҐзЁ­ЄЁ­ Ђ.\ ‚.} ’Ґ®аЁп ¬ бб®ў®Ј® ®Ўб«г¦Ёў ­Ёп. --- Њ.: ђ“„Ќ, 1995. 529 б.
+{\it Бочаров  П. П., Печинкин А. В.} Теория массового обслуживания. --- М.: РУДН, 1995. 529 с.
 \end{thebibliography}
 }
 
@@ -219,14 +223,14 @@ INFORMATICS AND APPLICATIONS\ \ \ 2023\ \ \ volume~17\ \ \ issue\ 4
 \hfill \textbf{\thepage}}}
 
 
-\Abst{ABstract in English (­Ґ ¬Ґ­ҐҐ 100 б«®ў)}
+\Abst{ABstract in English (не менее 100 слов)}
 
 
-\KWE{Є«озҐўлҐ б«®ў  ­   ­Ј«Ё©бЄ®¬}
+\KWE{ключевые слова на английском}
 
 
 \Ack
-Ѓ« Ј®¤ а­®бвЁ ­   ­Ј«Ё©бЄ®¬
+Благодарности на английском
 
 \renewcommand{\refname}{\protect\rmfamily References}
 
